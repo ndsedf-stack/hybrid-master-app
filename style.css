@@ -1,0 +1,94 @@
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif; 
+    background: #07101a; /* Fond très sombre */
+    color: white; 
+    padding: 20px;
+    padding-bottom: 100px; /* Espace pour la barre de navigation fixe */
+}
+
+.container { 
+    max-width: 900px; 
+    margin: auto; 
+}
+
+.title { 
+    font-size: 2rem; 
+    font-weight: 800; 
+    margin-bottom: 1.5rem; 
+    color: #00e5ff; /* Couleur d'accentuation bleu vif */
+}
+
+.card { 
+    background: #0d1821; 
+    border-radius: 12px; 
+    border: 1px solid #1e2936; 
+    padding: 1.25rem; 
+    margin-bottom: 1rem; 
+    cursor: pointer; /* Indique qu'on peut cliquer sur la carte */
+}
+
+.btn { 
+    background: #00e5ff; 
+    color: black; 
+    padding: 1rem 1.5rem;
+    border-radius: 12px; 
+    font-weight: 700; 
+    text-align: center;
+    display: block;
+    margin: 0.5rem 0;
+    border: none;
+    font-size: 1.1rem;
+}
+
+.week-display { 
+    font-size: 2.5rem; 
+    font-weight: 900; 
+    color: #00e5ff; 
+    text-align: center; 
+    margin: 1rem 0; 
+}
+
+.nav { 
+    display: flex; 
+    gap: 0.5rem; 
+    margin: 1rem 0; 
+}
+
+.nav-btn { 
+    flex: 1; 
+    padding: 0.75rem; 
+    border-radius: 10px; 
+    border: 1px solid #1e2936; 
+    background: transparent; 
+    color: white; 
+    cursor: pointer;
+}
+
+/* Styles pour la barre de navigation fixe en bas */
+.bottom-nav { 
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    right: 0; 
+    background: #0d1821; 
+    border-top: 1px solid #1e2936; 
+    display: flex; 
+    justify-content: space-around; 
+    padding: 1rem 0; 
+}
+
+.nav-item { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    color: white; 
+    font-size: 0.8rem; 
+    gap: 0.25rem; 
+    cursor: pointer;
+}

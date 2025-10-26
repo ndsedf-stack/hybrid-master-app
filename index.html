@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hybrid Master 51</title>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Hybrid Master 51</h1>
+
+        <div class="card">
+            <div style="text-align: center;">
+                <div style="color: #8a99c0;">SEMAINE ACTUELLE</div>
+                <div class="week-display" id="weekDisplay">1</div>
+                <div style="color: #00e5ff; font-weight: 600;" id="blockName">Fondation (B1)</div>
+            </div>
+            
+            <div class="nav">
+                <button class="nav-btn" onclick="changeWeek(-1)">⬅️ Précédente</button>
+                <button class="nav-btn" onclick="changeWeek(1)">Suivante ➡️</button>
+            </div>
+        </div>
+
+        <h2 style="margin: 1.5rem 0 1rem 0;">Séances de la semaine</h2>
+        
+        <div class="card" onclick="startWorkout('dimanche')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">💪 Dimanche</h3>
+            <div style="color: #8a99c0;">Dos + Jambes Lourdes</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">4 exercices - Tap pour démarrer</div>
+        </div>
+        
+        <div class="card" onclick="startWorkout('lundi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🤸‍♂️ Lundi</h3>
+            <div style="color: #8a99c0;">Repos Actif (Marche/Étirements)</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">0 exercice - Tap pour démarrer</div>
+        </div>
+
+        <div class="card" onclick="startWorkout('mardi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🔥 Mardi</h3>
+            <div style="color: #8a99c0;">Pectoraux + Biceps</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">5 exercices - Tap pour démarrer</div>
+        </div>
+
+        <div class="card" onclick="startWorkout('mercredi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🏃 Mercredi</h3>
+            <div style="color: #8a99c0;">Cardio Modéré (Course à pied ou Natation)</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">1 session - Tap pour démarrer</div>
+        </div>
+
+        <div class="card" onclick="startWorkout('jeudi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🏋️ Jeudi</h3>
+            <div style="color: #8a99c0;">Épaules + Triceps + Abdominaux</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">6 exercices - Tap pour démarrer</div>
+        </div>
+
+        <div class="card" onclick="startWorkout('vendredi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🧘 Vendredi</h3>
+            <div style="color: #8a99c0;">Repos Complet</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">0 exercice - Tap pour démarrer</div>
+        </div>
+
+        <div class="card" onclick="startWorkout('samedi')">
+            <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">🦵 Samedi</h3>
+            <div style="color: #8a99c0;">Jambes Légères + Fessiers</div>
+            <div style="color: #00e5ff; margin-top: 0.5rem;">3 exercices - Tap pour démarrer</div>
+        </div>
+        
+        <div class="bottom-nav">
+            <div class="nav-item"><i class="fas fa-chart-line"></i> Suivi</div>
+            <div class="nav-item"><i class="fas fa-home"></i> Accueil</div>
+            <div class="nav-item"><i class="fas fa-cog"></i> Réglages</div>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
